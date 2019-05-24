@@ -1,6 +1,10 @@
 # easy-functions
 Laravel package for useful &amp; easy PHP functions
 
+[![Latest Version](https://img.shields.io/github/release/bagsiz/easy-functions.svg?style=flat-square)](https://github.com/bagsiz/easy-functions/releases)
+[![Total Downloads](https://img.shields.io/packagist/dt/bagsiz/easy-functions.svg?style=flat-square)](https://packagist.org/packages/bagsiz/easy-functions)
+
+
 ## Installation
 
 This package can be installed through Composer.
