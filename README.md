@@ -6,7 +6,7 @@ Laravel package for useful &amp; easy PHP functions
 This package can be installed through Composer.
 
 ``` bash
-composer require
+composer require bagsiz/easy-functions
 ```
 
 
