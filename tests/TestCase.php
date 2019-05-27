@@ -62,7 +62,6 @@ abstract class TestCase extends OrchestraTestCase
             Schema::create($tableName, function (Blueprint $table) use ($tableName) {
                 $table->increments('id');
                 $table->string('name')->nullable();
-                $table->string('text')->nullable();
                 $table->timestamps();
                 $table->softDeletes();
             });

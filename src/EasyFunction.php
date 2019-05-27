@@ -50,6 +50,6 @@ class EasyFunction
         while( !( isset( $rand[$length-1] ) ) ) {
             $rand   .= mt_rand( );
         }
-        return substr( $rand , 0 , $length );
+        return (int)substr( $rand , 0 , $length );
     }
 }

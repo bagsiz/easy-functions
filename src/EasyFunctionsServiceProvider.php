@@ -13,11 +13,6 @@ class EasyFunctionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('command.activitylog:clean', CleanActivitylogCommand::class);
-        $this->commands([
-            'command.activitylog:clean',
-        ]);
-        
         $this->app->bind(EasyFunction::class, function () {
             return new EasyFunction();
         });

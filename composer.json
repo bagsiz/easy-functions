@@ -41,7 +41,7 @@
     },
     "autoload-dev": {
       "psr-4": {
-        "Bagsiz\\EasyFunctions\\Tests\\": "tests"
+        "Bagsiz\\EasyFunctions\\Test\\": "tests"
       }
     }
 }
