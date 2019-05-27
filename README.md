@@ -33,3 +33,9 @@ function checkUserModel() {
 - $fiels = The field of the model -> String `'field'`
 - $type = The type of value you want to generate -> String `'str'` or Integer `'int'`. Default `'str'` 
 - $length = The length of value you want to generate -> Int `8`. Default `8`
+
+
+## Testing 
+``` bash 
+composer test 
+```
