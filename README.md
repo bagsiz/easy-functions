@@ -2,10 +2,9 @@
 Laravel package for useful &amp; easy PHP functions
 
 [![Latest Version](https://img.shields.io/github/release/bagsiz/easy-functions.svg?style=flat-square)](https://github.com/bagsiz/easy-functions/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/bagsiz/easy-functions.svg?style=flat-square)](https://packagist.org/packages/bagsiz/easy-functions)
-[![Build Status](https://img.shields.io/travis/bagsiz/easy-functions.svg?style=flat-square)](https://travis-ci.org/ bagsiz/easy-functions)
+[![Build Status](https://img.shields.io/travis/bagsiz/easy-functions/master.svg?style=flat-square)](https://travis-ci.org/bagsiz/easy-functions)
 [![Quality Score](https://img.shields.io/scrutinizer/quality/g/bagsiz/easy-functions/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/bagsiz/easy-functions)
-
+[![Total Downloads](https://img.shields.io/packagist/dt/bagsiz/easy-functions.svg?style=flat-square)](https://packagist.org/packages/bagsiz/easy-functions)
 
 
 ## Installation
