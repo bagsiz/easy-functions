@@ -1,5 +1,5 @@
 # easy-functions
-Laravel package for useful &amp; easy PHP functions
+Laravel package for useful &amp; easy functions
 
 [![Latest Version](https://img.shields.io/github/release/bagsiz/easy-functions.svg?style=flat-square)](https://github.com/bagsiz/easy-functions/releases)
 [![Build Status](https://img.shields.io/travis/bagsiz/easy-functions/master.svg?style=flat-square)](https://travis-ci.org/bagsiz/easy-functions)
