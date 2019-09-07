@@ -37,6 +37,17 @@ function checkUserModel() {
 - $type = The type of value you want to generate -> String `'str'` or Integer `'int'`. Default `'str'` 
 - $length = The length of value you want to generate -> Int `8`. Default `8`
 
+### decimalToTime
+This function aims to convert an integer with a decimal to time string
+#### Usage
+```php
+function someFunction() {
+  $timeString = EasyFunction::decimalToTime(23.56);
+}
+```
+
+`decimalToTime(int $decimal)`
+- $decimal = Must have a "." for decimal part. (Ex: 23.56)
 
 ## Testing 
 ``` bash 

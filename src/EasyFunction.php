@@ -52,4 +52,26 @@ class EasyFunction
         }
         return (int)substr( $rand , 0 , $length );
     }
+
+    public static function decimalToTime($decimal)
+    {
+        if(!$decimal) {
+            return "Empty data given.";
+        }
+        if (strpos((string) $decimal, ".") !== false) {
+            $timeArray = explode(".", $decimal);
+            if(isset($timeArray[1])) {
+                if(strlen((string) $timeArray[1]) == 1) {
+                    $timeArray[1] = sprintf("%1s0", $timeArray[1]);
+                    return gmdate('H:i:s', $timeArray[0]).'.'.$timeArray[1];
+                }
+                return gmdate('H:i:s', $timeArray[0]).'.'.str_pad($timeArray[1], 2, "0", STR_PAD_LEFT);
+            } else {
+                return gmdate('H:i:s', $timeArray[0]).'.00';
+            }
+        } else {
+            return 'Integer must contain "." for decimals';
+        }
+        
+    }
 }
