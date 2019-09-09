@@ -59,22 +59,23 @@ class EasyFunction
         if (! $decimal) {
             return 'Empty data given.';
         }
-        if (strpos((string) $decimal, ".") !== false) {
-            $timeArray = explode(".", $decimal);
+        if (strpos((string) $decimal, '.') !== false) {
+            $timeArray = explode('.', $decimal);
 
-            $zero    = new DateTime("@0");
-            $offset  = new DateTime("@$timeArray[0]");
-            $diff    = $zero->diff($offset);
+            $zero = new DateTime('@0');
+            $offset = new DateTime("@$timeArray[0]");
+            $diff = $zero->diff($offset);
 
-            $timeString = sprintf("%02d:%02d:%02d:%02d", $diff->days, $diff->h, $diff->i, $diff->s);
+            $timeString = sprintf('%02d:%02d:%02d:%02d', $diff->days, $diff->h, $diff->i, $diff->s);
 
-            if(isset($timeArray[1])) {
-                if(strlen((string) $timeArray[1]) == 1) {
-                    $timeArray[1] = sprintf("%1s0", $timeArray[1]);
+            if (isset($timeArray[1])) {
+                if (strlen((string) $timeArray[1]) == 1) {
+                    $timeArray[1] = sprintf('%1s0', $timeArray[1]);
+
                     return $timeString.'.'.$timeArray[1];
                 }
-                return $timeString.'.'.str_pad($timeArray[1], 2, "0", STR_PAD_LEFT);
 
+                return $timeString.'.'.str_pad($timeArray[1], 2, '0', STR_PAD_LEFT);
             } else {
                 return $timeString.'.00';
             }
