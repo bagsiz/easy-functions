@@ -2,6 +2,8 @@
 
 namespace Bagsiz\EasyFunctions;
 
+use DateTime;
+
 class EasyFunction
 {
     /**

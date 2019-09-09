@@ -43,7 +43,7 @@ This function aims to convert an integer with a decimal to time string
 #### Usage
 ```php
 function someFunction() {
-  $timeString = EasyFunction::decimalToTime(23.56); // Should return "00:00:23.56"
+  $timeString = EasyFunction::decimalToTime(936437.85); // Should return "10:20:07:17.85"
 }
 ```
 
