@@ -60,18 +60,24 @@ class EasyFunction
         }
         if (strpos((string) $decimal, ".") !== false) {
             $timeArray = explode(".", $decimal);
+
+            $zero    = new DateTime("@0");
+            $offset  = new DateTime("@$timeArray[0]");
+            $diff    = $zero->diff($offset);
+
+            $timeString = sprintf("%02d:%02d:%02d:%02d", $diff->days, $diff->h, $diff->i, $diff->s);
+
             if(isset($timeArray[1])) {
                 if(strlen((string) $timeArray[1]) == 1) {
                     $timeArray[1] = sprintf("%1s0", $timeArray[1]);
-                    return gmdate('H:i:s', $timeArray[0]).'.'.$timeArray[1];
+                    return $timeString.'.'.$timeArray[1];
                 }
-                return gmdate('H:i:s', $timeArray[0]).'.'.str_pad($timeArray[1], 2, "0", STR_PAD_LEFT);
+                return $timeString.'.'.str_pad($timeArray[1], 2, "0", STR_PAD_LEFT);
             } else {
-                return gmdate('H:i:s', $timeArray[0]).'.00';
+                return $timeString.'.00';
             }
         } else {
             return 'Integer must contain "." for decimals';
         }
-        
     }
 }
