@@ -23,8 +23,7 @@ class DecimalToTimeTest extends TestCase
 
     public function it_can_respond_with_error_string()
     {
-        $response = $this->easyfunction->decimalToTime(23,56);
+        $response = $this->easyfunction->decimalToTime(23, 56);
         $this->assertIsString($response);
     }
 }
-

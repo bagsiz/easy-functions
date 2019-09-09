@@ -2,8 +2,8 @@
 
 namespace Bagsiz\EasyFunctions\Test;
 
-use Bagsiz\EasyFunctions\Test\Models\User;
 use Bagsiz\EasyFunctions\EasyFunction;
+use Bagsiz\EasyFunctions\Test\Models\User;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CheckFieldForRandomTest extends TestCase
@@ -26,7 +26,7 @@ class CheckFieldForRandomTest extends TestCase
         $response = $this->easyfunction->checkFieldForRandom($this->user, 'id', 'int', 8);
         $this->assertIsInt($response);
     }
-    
+
     /** @test */
     public function it_can_respond_with_random_string()
     {
@@ -34,4 +34,3 @@ class CheckFieldForRandomTest extends TestCase
         $this->assertIsString($response);
     }
 }
-

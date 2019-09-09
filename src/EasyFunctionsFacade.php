@@ -3,6 +3,7 @@
 namespace Bagsiz\EasyFunctions;
 
 use Illuminate\Support\Facades\Facade;
+
 /**
  * @see \Bagsiz\EasyFunctions\EasyFunction
  */

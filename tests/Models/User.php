@@ -17,26 +17,33 @@ class User extends Model implements Authenticatable
     {
         return 'id';
     }
+
     public function getAuthIdentifier()
     {
         $name = $this->getAuthIdentifierName();
+
         return $this->attributes[$name];
     }
+
     public function getAuthPassword()
     {
         return $this->attributes['password'];
     }
+
     public function getRememberToken()
     {
         return 'token';
     }
+
     public function setRememberToken($value)
     {
     }
+
     public function getRememberTokenName()
     {
         return 'tokenName';
     }
+
     public function articles()
     {
         return $this->hasMany(Article::class);

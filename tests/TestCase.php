@@ -2,22 +2,19 @@
 
 namespace Bagsiz\EasyFunctions\Test;
 
-use Bagsiz\EasyFunctions\EasyFunctionsServiceProvider;
-use Bagsiz\EasyFunctions\EasyFunctionsFacade;
 use Bagsiz\EasyFunctions\EasyFunction;
-use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Bagsiz\EasyFunctions\Test\Models\User;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
-
+use Bagsiz\EasyFunctions\Test\Models\User;
+use Bagsiz\EasyFunctions\EasyFunctionsFacade;
+use Bagsiz\EasyFunctions\EasyFunctionsServiceProvider;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 /**
- * Class TestCase
- * @package Tests
+ * Class TestCase.
  * @runTestsInSeparateProcesses
  * @preserveGlobalState disabled
  */
-
 abstract class TestCase extends OrchestraTestCase
 {
     public function setUp(): void
@@ -38,6 +35,7 @@ abstract class TestCase extends OrchestraTestCase
             EasyFunctionsServiceProvider::class,
         ];
     }
+
     /**
      * @param \Illuminate\Foundation\Application $app
      *
