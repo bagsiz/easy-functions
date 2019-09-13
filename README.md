@@ -52,5 +52,5 @@ function someFunction() {
 
 ## Testing 
 ``` bash 
-composer test 
+./vendor/bin/phpunit 
 ```
